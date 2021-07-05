@@ -1,0 +1,147 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-06-28T13:32:56.088Z",
+    "end": "2021-06-28T13:35:25.889Z",
+    "duration": 149801,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "36da007b-ee83-4c9c-ae0f-8f19265c29c4",
+      "title": "",
+      "fullFile": "cypress/integration/examples/actions_spec1.js",
+      "file": "cypress/integration/examples/actions_spec1.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "341976e2-66f5-4422-9522-43feb659b693",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "cy.scrollTo() - scroll the window or element to a position",
+              "fullTitle": "Actions cy.scrollTo() - scroll the window or element to a position",
+              "timedOut": null,
+              "duration": 105406,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('user is: ' + USERS.firstName);\nhomePage.getEditBot();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://example.cypress.io/__cypress/runner/cypress_runner.js:137892:13)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:138912:16\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:10791:23)\n    at https://example.cypress.io/__cypress/runner/cypress_runner.js:5913:41\n    at tryCatcher (https://example.cypress.io/__cypress/runner/cypress_runner.js:10791:23)\n    at Promise._settlePromiseFromHandler (https://example.cypress.io/__cypress/runner/cypress_runner.js:8726:31)\n    at Promise._settlePromise (https://example.cypress.io/__cypress/runner/cypress_runner.js:8783:18)\n    at Promise._settlePromise0 (https://example.cypress.io/__cypress/runner/cypress_runner.js:8828:10)\n    at Promise._settlePromises (https://example.cypress.io/__cypress/runner/cypress_runner.js:8904:18)\n    at _drainQueueStep (https://example.cypress.io/__cypress/runner/cypress_runner.js:5498:12)\n    at _drainQueue (https://example.cypress.io/__cypress/runner/cypress_runner.js:5491:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://example.cypress.io/__cypress/runner/cypress_runner.js:5507:5)\n    at Async.drainQueues (https://example.cypress.io/__cypress/runner/cypress_runner.js:5377:14)\nFrom Your Spec Code:\n    at HomePage.getEditBot (https://example.cypress.io/__cypress/tests?p=cypress/integration/examples/actions_spec1.js:178:8)\n    at Context.eval (https://example.cypress.io/__cypress/tests?p=cypress/integration/examples/actions_spec1.js:145:14)",
+                "diff": null
+              },
+              "uuid": "1e1f15f8-bbac-4f8c-bfa1-94aa4e6e1cf8",
+              "parentUUID": "341976e2-66f5-4422-9522-43feb659b693",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "cy.scrollTo2() - scroll the window or element to a position",
+              "fullTitle": "Actions cy.scrollTo2() - scroll the window or element to a position",
+              "timedOut": null,
+              "duration": 24542,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// homePage.goToOtherPage()",
+              "err": {},
+              "uuid": "851031f4-be36-46f5-9349-14198afacc11",
+              "parentUUID": "341976e2-66f5-4422-9522-43feb659b693",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "cy.scrollTo3() - scroll the window or element to a position",
+              "fullTitle": "Actions cy.scrollTo3() - scroll the window or element to a position",
+              "timedOut": null,
+              "duration": 16299,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "let myConfig = Cypress.config();\nexpect(myConfig).to.have.property('animationDistanceThreshold', 10);",
+              "err": {
+                "message": "AssertionError: expected { Object (reporter, defaultCommandTimeout, ...) } to have property 'animationDistanceThreshold' of 10, but got 5",
+                "estack": "AssertionError: expected { Object (reporter, defaultCommandTimeout, ...) } to have property 'animationDistanceThreshold' of 10, but got 5\n    at Context.eval (https://example.cypress.io/__cypress/tests?p=cypress/integration/examples/actions_spec1.js:151:30)",
+                "diff": "- 5\n+ 10\n"
+              },
+              "uuid": "cc74f01e-f20e-4320-8e7d-b258b4cd2660",
+              "parentUUID": "341976e2-66f5-4422-9522-43feb659b693",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "851031f4-be36-46f5-9349-14198afacc11"
+          ],
+          "failures": [
+            "1e1f15f8-bbac-4f8c-bfa1-94aa4e6e1cf8",
+            "cc74f01e-f20e-4320-8e7d-b258b4cd2660"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 146247,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}

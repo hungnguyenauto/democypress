@@ -1,0 +1,12 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "reporter": "mochawesome",
+  "defaultCommandTimeout": 8000,
+  "env": {
+    "url": "https://example.cypress.io/commands/actions",
+    "username": "demo@example.com",
+    "password": "demo123",
+    "workspaceId": "cba6428155274c09bc5501e839d25a5b"
+  },
+  "projectId": "hungnguyenauto"
+}
